@@ -13,26 +13,26 @@ class convertToWebP(QMainWindow):
         super(convertToWebP, self).__init__(*args, **kwargs)
         self.version = 1.0
 
-        width = 1000
-        height = 800
 
-        ################      UI
-        self.setWindowTitle(f"WebP Converter{self.version}")
+        # UI
+        self.setWindowTitle(f"WebP Converter by Big Secret | v{self.version}")
+        self.setMinimumSize(500, 350)
+
 
         # LAYOUTS
         self.mainLayout = QVBoxLayout()
+        self.topBarLayout = QHBoxLayout()
+        self.settingsLayout = QVBoxLayout()
+        self.statusBarLayout = QHBoxLayout()
+
 
 
         # FINALIZE
         self.mainWidget = QWidget()
         self.mainWidget.setLayout(self.mainLayout)
         self.setCentralWidget(self.mainWidget)
-
         self.show()
 
-
-        self.outputFolder = "D:\Projects\Crypto Priks\CreateWebP\webp"
-        self.inputFolder = inputPath
 
         try:
             os.mkdir(self.outputFolder)
