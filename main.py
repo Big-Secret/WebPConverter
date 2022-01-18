@@ -1,3 +1,6 @@
+# WEB P CONVERTER BY BIG SECRET. PLEASE DO NOT REDISTRIBUTE OR SELL.
+# This software may not be resold, redistributed or otherwise conveyed to a third party
+
 import traceback
 import threading
 import os
@@ -29,6 +32,7 @@ class convertToWebP(QMainWindow):
 
         # UI
         self.setWindowTitle(f"WebP Converter by Big Secret | v{self.version}")
+        self.setWindowIcon(QIcon('appIcon-01.ico'))
         self.setMinimumSize(500, 350)
         self.setFont(QFont("Arial", 10))
 
@@ -113,6 +117,10 @@ class convertToWebP(QMainWindow):
         self.qualityLayout.addWidget(self.qualityNumberLabel)
         self.qualityLayout.addWidget(self.qualitySlider)
 
+        # WEB P CONVERTER BY BIG SECRET. PLEASE DO NOT REDISTRIBUTE OR SELL.
+        # This software may not be resold, redistributed or otherwise conveyed to a third party
+
+
         # METHOD
         self.methodDefault = 4
         self.methodLabel = QLabel()
@@ -132,7 +140,7 @@ class convertToWebP(QMainWindow):
         self.methodDescriptionLabel.setFont(QFont("Arial", 8))
         self.methodDescriptionLabel.setWordWrap(True)
         self.saveCurrentSettingsCheckbox = QCheckBox()
-        self.saveCurrentSettingsCheckbox.setText("Save Settings")
+        self.saveCurrentSettingsCheckbox.setText("Save Settings (coming soon)")
         self.saveCurrentSettingsCheckbox.setDisabled(True)
 
         # CREATE H LAYOUT FOR METHOD WIDGETS
@@ -187,6 +195,9 @@ class convertToWebP(QMainWindow):
         self.mainLayout.addWidget(self.sameAsInputCheckbox)
         self.mainLayout.addWidget(self.setOutFolderButton)
         self.mainLayout.addLayout(self.statusBarLayout)
+
+        # WEB P CONVERTER BY BIG SECRET. PLEASE DO NOT REDISTRIBUTE OR SELL.
+        # This software may not be resold, redistributed or otherwise conveyed to a third party
 
         # FINALIZE UI
         self.mainWidget = QWidget()
@@ -263,6 +274,8 @@ class convertToWebP(QMainWindow):
     def updateMethodSlider(self, value):
         self.methodNumberLabel.setText(str(value))
         self.exportMethod = int(value)
+        # WEB P CONVERTER BY BIG SECRET. PLEASE DO NOT REDISTRIBUTE OR SELL.
+        # This software may not be resold, redistributed or otherwise conveyed to a third party
 
         # EXPORT CHECKBOX SETTINGS
 
@@ -374,3 +387,6 @@ if __name__ == "__main__":
     # monitorQueue()
     app.exec_()
     traceback.print_exc()
+
+# WEB P CONVERTER BY BIG SECRET. PLEASE DO NOT REDISTRIBUTE OR SELL.
+# This software may not be resold, redistributed or otherwise conveyed to a third party
