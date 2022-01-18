@@ -11,5 +11,5 @@ To Start:
 
 Screnshot:
 
-![App Screenshot](https://imgur.com/a/DgoYgq1)
+![App Screenshot](https://i.imgur.com/dg8B2fe.png)
       
