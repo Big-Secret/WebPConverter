@@ -8,4 +8,8 @@ To Start:
     - Type pip install -r requirements.txt
     
 - run main.py
+
+Screnshot:
+
+![App Screenshot](https://imgur.com/a/DgoYgq1)
       
