@@ -9,7 +9,7 @@ To Start:
     
 - run main.py
 
-Screnshot:
+Screenshot:
 
 ![App Screenshot](https://i.imgur.com/dg8B2fe.png)
 
